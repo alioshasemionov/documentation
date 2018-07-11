@@ -202,7 +202,13 @@ Creates new contract.
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED  
+  * **Code:** 401 UNAUTHORIZED
+    * **Content**  
+    ```json
+    {
+      "Error": "Wrong credentials"
+    }
+    ```
 
 ## Load contracts
 
@@ -237,7 +243,13 @@ Returns json data about an user's contracts.
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED  
+  * **Code:** 401 UNAUTHORIZED
+    * **Content**  
+    ```json
+    {
+      "Error": "Wrong credentials"
+    }
+    ```
 
 ## Load a contract
 
@@ -280,7 +292,13 @@ Returns json data about a contract by a hash.
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED  
+  * **Code:** 401 UNAUTHORIZED
+    * **Content**  
+    ```json
+    {
+      "Error": "Wrong credentials"
+    }
+    ```
 
 ## Update a contract
 
@@ -310,7 +328,13 @@ Updates a contract by a hash.
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED  
+  * **Code:** 401 UNAUTHORIZED
+    * **Content**  
+    ```json
+    {
+      "Error": "Wrong credentials"
+    }
+    ```
 
 ## Delete a contract
 
@@ -340,7 +364,13 @@ Deletes a contract by a hash.
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED  
+  * **Code:** 401 UNAUTHORIZED
+    * **Content**  
+    ```json
+    {
+      "Error": "Wrong credentials"
+    }
+    ```
 
 ## Add/reject a contract
 
@@ -372,7 +402,13 @@ Adds/rejects a contract by a hash.
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED  
+  * **Code:** 401 UNAUTHORIZED
+    * **Content**  
+    ```json
+    {
+      "Error": "Wrong credentials"
+    }
+    ```
 
 ## Create new claim
 
@@ -406,7 +442,13 @@ Adds a claim
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED  
+  * **Code:** 401 UNAUTHORIZED
+    * **Content**  
+    ```json
+    {
+      "Error": "Wrong credentials"
+    }
+    ```
 
 ## Add a resolution
 
@@ -444,4 +486,10 @@ Adds a resolution
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED  
+  * **Code:** 401 UNAUTHORIZED
+    * **Content**  
+    ```json
+    {
+      "Error": "Wrong credentials"
+    }
+    ```
