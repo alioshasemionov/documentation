@@ -51,6 +51,10 @@ Show contract data by a hash
 
   /details/:hash
 
+* **URL Params**
+
+  none
+
 ---
 
 ## Get networks
@@ -76,10 +80,12 @@ Returns a json array of numbers.
 * **Success Response:**
 
   * **Code:** 200  
+    **Content:** `success`
 
 * **Error Response:**  
 
-  * **Code:** 500 INTERNAL SEVER ERROR
+  * **Code:** 500 INTERNAL SEVER ERROR  
+    **Content:**
     ```json
       {
         "Error": "Internal Server Error"
@@ -112,8 +118,8 @@ Returns a json object with an authToken and an expiration.
   * **Code:** 200  
 
 * **Error Response:**
-  * **Code:** 401 UNAUTHORIZED
-  * **Content:**  
+  * **Code:** 401 UNAUTHORIZED  
+    **Content:**  
     ```json
       {
         "Error": "Wrong credentials"
@@ -202,8 +208,8 @@ Creates new contract.
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED
-    * **Content**  
+  * **Code:** 401 UNAUTHORIZED  
+    **Content:**  
     ```json
     {
       "Error": "Wrong credentials"
@@ -243,8 +249,8 @@ Returns json data about an user's contracts.
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED
-    * **Content**  
+  * **Code:** 401 UNAUTHORIZED  
+    **Content:**  
     ```json
     {
       "Error": "Wrong credentials"
@@ -292,8 +298,8 @@ Returns json data about a contract by a hash.
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED
-    * **Content**  
+  * **Code:** 401 UNAUTHORIZED  
+    **Content:**  
     ```json
     {
       "Error": "Wrong credentials"
@@ -328,8 +334,8 @@ Updates a contract by a hash.
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED
-    * **Content**  
+  * **Code:** 401 UNAUTHORIZED  
+    **Content:**  
     ```json
     {
       "Error": "Wrong credentials"
@@ -364,8 +370,8 @@ Deletes a contract by a hash.
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED
-    * **Content**  
+  * **Code:** 401 UNAUTHORIZED  
+    **Content:**  
     ```json
     {
       "Error": "Wrong credentials"
@@ -402,8 +408,8 @@ Adds/rejects a contract by a hash.
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED
-    * **Content**  
+  * **Code:** 401 UNAUTHORIZED  
+    **Content:**  
     ```json
     {
       "Error": "Wrong credentials"
@@ -442,8 +448,8 @@ Adds a claim
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED
-    * **Content**  
+  * **Code:** 401 UNAUTHORIZED  
+    **Content:**  
     ```json
     {
       "Error": "Wrong credentials"
@@ -486,8 +492,8 @@ Adds a resolution
 
 * **Error Response:**
 
-  * **Code:** 401 UNAUTHORIZED
-    * **Content**  
+  * **Code:** 401 UNAUTHORIZED  
+    **Content:**  
     ```json
     {
       "Error": "Wrong credentials"
