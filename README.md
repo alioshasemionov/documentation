@@ -1,6 +1,6 @@
 # Documentation
 
-## Show a dashboard
+## Open a dashboard page
 
 Shows all contracts
 
@@ -12,9 +12,9 @@ Shows all contracts
 
   none
 
-## Open create contract form
+## Open a create contract form page
 
-Opens create contract form
+Opens a create contract form page
 
 * **URL**
 
@@ -43,7 +43,7 @@ Opens create contract form
     returnURL=[string]
   ```
 
-## Show contract data
+## Open a contract data page
 
 Show contract data by a hash
 
