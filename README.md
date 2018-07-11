@@ -1,8 +1,6 @@
 # Documentation
 
-## Front-end
-
-### Dashboard
+## Show a dashboard
 
 Shows all contracts
 
@@ -14,9 +12,9 @@ Shows all contracts
 
   none
 
-### Create a new contraxt
+## Open create contract form
 
-Create a new contract
+Opens create contract form
 
 * **URL**
 
@@ -25,27 +23,27 @@ Create a new contract
 * **URL Params**
 
   ```
-    counterparty=[string],
-    name=[string],
-    agreement=[string],
-    periodToDate=[string],
-    periodToHour=[stirng],
-    pricePerUnit=[string],
-    quantity=[string],
-    price=[string],
-    advancePaymentPct=[number],
-    closeoutPaymentPct=[number],
-    lateFeeApply=[bool],
-    lateFeeRatePct=[number],
-    lateFeeMaxPct=[number],
-    clientsContacts=[string],
-    contractorsContacts=[string],
-    arbitrationClause=[bool],
+    counterparty=[string]
+    name=[string]
+    agreement=[string]
+    periodToDate=[string]
+    periodToHour=[stirng]
+    pricePerUnit=[string]
+    quantity=[string]
+    price=[string]
+    advancePaymentPct=[number]
+    closeoutPaymentPct=[number]
+    lateFeeApply=[bool]
+    lateFeeRatePct=[number]
+    lateFeeMaxPct=[number]
+    clientsContacts=[string]
+    contractorsContacts=[string]
+    arbitrationClause=[bool]
     partnerId=[string]
     returnURL=[string]
   ```
 
-### Show contract data
+## Show contract data
 
 Show contract data by a hash
 
@@ -57,9 +55,9 @@ Show contract data by a hash
 
   none
 
-## Back-end API
+---
 
-### Get networks
+## Get networks
 
 Returns a json array of numbers.
 
@@ -83,7 +81,7 @@ Returns a json array of numbers.
 
   * **Code:** 500 INTERNAL SEVER ERROR  
 
-### Login
+## Login
 
 Returns a json object with an authToken and an expiration.
 
@@ -110,7 +108,7 @@ Returns a json object with an authToken and an expiration.
 
 * **Error Response:**
 
-### Get minArbitrationFee
+## Get minArbitrationFee
 
 Returns a minArbitrationFee value.
 
@@ -132,7 +130,7 @@ Returns a minArbitrationFee value.
 
 * **Error Response:**
 
-### Create a new contract
+## Create a new contract
 
 Creates new contract.
 
@@ -179,7 +177,7 @@ Creates new contract.
 
   * **Code:** 401 UNAUTHORIZED  
 
-### Load contracts
+## Load contracts
 
 Returns json data about an user's contracts.
 
@@ -204,7 +202,7 @@ Returns json data about an user's contracts.
 
   * **Code:** 401 UNAUTHORIZED  
 
-### Load a contract
+## Load a contract
 
 Returns json data about a contract by a hash.
 
@@ -235,7 +233,7 @@ Returns json data about a contract by a hash.
 
   * **Code:** 401 UNAUTHORIZED  
 
-### Update a contract
+## Update a contract
 
 Updates a contract by a hash.
 
@@ -261,7 +259,7 @@ Updates a contract by a hash.
 
   * **Code:** 401 UNAUTHORIZED  
 
-### Delete a contract
+## Delete a contract
 
 Deletes a contract by a hash.
 
@@ -287,7 +285,7 @@ Deletes a contract by a hash.
 
   * **Code:** 401 UNAUTHORIZED  
 
-### Add/reject a contract
+## Add/reject a contract
 
 Adds/rejects a contract by a hash.
 
@@ -302,7 +300,71 @@ Adds/rejects a contract by a hash.
 * **URL Params**
 
    ```
-    "name"=[integer]
+    "name"=[string]
+   ```
+
+* **Success Response:**
+
+  * **Code:** 200  
+    **Content:**
+    `success`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED  
+
+## Create new claim
+
+Adds a claim
+
+* **URL**
+
+  /contracts/:hash/claims
+  
+* **Method**
+
+  `POST`
+  
+* **URL Params**
+
+   ```
+    "text"=[string]
+    "accountAddress"=[string]
+    "contractHash"=[string]
+   ```
+
+* **Success Response:**
+
+  * **Code:** 200  
+    **Content:**
+    `success`
+
+* **Error Response:**
+
+  * **Code:** 401 UNAUTHORIZED  
+
+## Add a resolution
+
+Adds a resolution
+
+* **URL**
+
+  /contracts/:hash/resolutions
+  
+* **Method**
+
+  `POST`
+  
+* **URL Params**
+
+   ```
+    "arbiter"=[string]
+    "resolutionHash"=[string]
+    "resolutionTime"=[number]
+    "contractHash"=[number]
+    "resolutionMessage"=[string]
+    "clientShare"=[string]
+    "contractorShare"=[string]
    ```
 
 * **Success Response:**
