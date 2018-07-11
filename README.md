@@ -160,7 +160,7 @@ Returns a minArbitrationFee value.
 
 ## Create a new contract
 
-Creates new contract.
+Creates a new contract.
 
 * **URL**
 
@@ -416,7 +416,7 @@ Adds/rejects a contract by a hash.
     }
     ```
 
-## Create new claim
+## Create a new claim
 
 Adds a claim
 
