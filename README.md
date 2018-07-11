@@ -79,7 +79,12 @@ Returns a json array of numbers.
 
 * **Error Response:**  
 
-  * **Code:** 500 INTERNAL SEVER ERROR  
+  * **Code:** 500 INTERNAL SEVER ERROR
+    ```json
+      {
+        "Error": "Internal Server Error"
+      }
+    ```
 
 ## Login
 
@@ -107,6 +112,13 @@ Returns a json object with an authToken and an expiration.
   * **Code:** 200  
 
 * **Error Response:**
+  * **Code:** 401 UNAUTHORIZED
+  * **Content:**  
+    ```json
+      {
+        "Error": "Wrong credentials"
+      }
+    ```
 
 ## Get minArbitrationFee
 
@@ -129,6 +141,12 @@ Returns a minArbitrationFee value.
   * **Code:** 200  
 
 * **Error Response:**
+  * **Code:** 500 INTERNAL SEVER ERROR
+    ```json
+      {
+        "Error": "Internal Server Error"
+      }
+    ```
 
 ## Create a new contract
 
@@ -196,7 +214,13 @@ Returns json data about an user's contracts.
 * **Success Response:**
 
   * **Code:** 200  
-    **Content:** `{ "hash": "0x3cd00494623d4d406b468e3baebcf60a95cba4250ec325e0530531278859c97b", ... }`
+    **Content:**
+    ```
+    {
+      "hash": "0x3cd00494623d4d406b468e3baebcf60a95cba4250ec325e0530531278859c97b",
+      ...
+    }
+    ```
 
 * **Error Response:**
 
@@ -224,8 +248,16 @@ Returns json data about a contract by a hash.
     **Content:**
     ```
     [
-      "contract": { "hash": "0x3cd00494623d4d406b468e3baebcf60a95cba4250ec325e0530531278859c97b", ... },
-      "claims": [ { "hash": "0x1d1f4b1aa1385cbc38645644f108b62db58e6dbff8faa78d725cf864bcacb0db", ...} ],
+      "contract": {
+        "hash": "0x3cd00494623d4d406b468e3baebcf60a95cba4250ec325e0530531278859c97b",
+        ...
+      },
+      "claims": [
+        {
+          "hash": "0x1d1f4b1aa1385cbc38645644f108b62db58e6dbff8faa78d725cf864bcacb0db",
+          ...
+        }
+      ],
     ]
     ```
 
