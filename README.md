@@ -50,10 +50,6 @@ Show contract data by a hash
 * **URL**
 
   /details/:hash
-  
-* **URL Params**
-
-  none
 
 ---
 
@@ -64,6 +60,10 @@ Returns a json array of numbers.
 * **URL**
 
   /networks
+
+* **Headers**
+  
+  none
   
 * **Method**
 
@@ -93,6 +93,11 @@ Returns a json object with an authToken and an expiration.
 * **URL**
 
   /login
+
+* **Headers**
+  
+  `signature`  
+  `timestamp`
   
 * **Method**
 
@@ -101,11 +106,6 @@ Returns a json object with an authToken and an expiration.
 * **URL Params**
 
   none
-
-* **Headers**
-  
-  `signature`
-  `timestamp`
 
 * **Success Response:**
 
@@ -127,6 +127,10 @@ Returns a minArbitrationFee value.
 * **URL**
 
   /minArbitrationFee
+
+* **Headers**
+  
+  `authorization`
   
 * **Method**
 
@@ -155,6 +159,11 @@ Creates new contract.
 * **URL**
 
   /network/:network/account/:account/contracts
+
+
+* **Headers**
+  
+  `authorization`
   
 * **Method**
 
@@ -202,6 +211,10 @@ Returns json data about an user's contracts.
 * **URL**
 
   /network/:network/accounts/:account/contracts
+
+* **Headers**
+  
+  `authorization`
   
 * **Method**
 
@@ -233,6 +246,10 @@ Returns json data about a contract by a hash.
 * **URL**
 
   /contracts/:hash
+
+* **Headers**
+  
+  `authorization`
   
 * **Method**
 
@@ -272,6 +289,10 @@ Updates a contract by a hash.
 * **URL**
 
   /contracts/:hash
+
+* **Headers**
+  
+  `authorization`
   
 * **Method**
 
@@ -298,6 +319,10 @@ Deletes a contract by a hash.
 * **URL**
 
   /contracts/:hash
+
+* **Headers**
+  
+  `authorization`
   
 * **Method**
 
@@ -324,6 +349,10 @@ Adds/rejects a contract by a hash.
 * **URL**
 
   /contracts/:hash/meta
+
+* **Headers**
+  
+  `authorization`
   
 * **Method**
 
@@ -352,6 +381,10 @@ Adds a claim
 * **URL**
 
   /contracts/:hash/claims
+
+* **Headers**
+  
+  `authorization`
   
 * **Method**
 
@@ -382,6 +415,10 @@ Adds a resolution
 * **URL**
 
   /contracts/:hash/resolutions
+
+* **Headers**
+  
+  `authorization`
   
 * **Method**
 
