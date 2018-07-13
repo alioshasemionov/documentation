@@ -2,7 +2,7 @@
 
 ## Create a new contract
 
-To create a new contract you have to redirect a user to https://app.confideal.com/create with following parameters:
+To create a new contract you have to redirect a user to https://app.confideal.io/create with following parameters:
 
 * **Required:**  
   ```
