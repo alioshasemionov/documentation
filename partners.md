@@ -1,35 +1,35 @@
-# Documentation
+# Confideal API reference
 
-## Create a new contract
+## Creating a new contract
 
-To create a new contract you have to redirect a user to https://app.confideal.io/create with following parameters:
+To create a new contract, you need to redirect the user to https://app.confideal.io/create with the following parameters:
 
-* **Required:**  
+* **Mandatory:**  
   ```
     partner - your account address
   ```
 
-* **Not required:**
+* **Optional:**
   ```
-    returnURL=[string] - an url address where the user will be redirected
-    name=[string] - a contract name
-    counterparty=[string] - a counterparty's account address
-    agreement=[string] - an detailed information about the contract
-    pricePerUnit=[number] - a unit price
-    quantity=[number] - units quantity
-    advancePaymentPct=[number] - an advance payment in a percentage
-    closeoutPaymentPct=[number] - a closeout payment in a percentage
+    returnURL=[string] - a URL where the user will be redirected
+    name=[string] - contract name
+    counterparty=[string] - counterparty's account address
+    agreement=[string] - contract details (applicable terms and conditions)
+    pricePerUnit=[number] - price per unit
+    quantity=[number] - quantity of units
+    advancePaymentPct=[number] - advance payment, %% of the contract price
+    closeoutPaymentPct=[number] - closeout payment, %% of the contract price
     lateFeeApply=[boolean] - enable late fee
-    lateFeeRatePct=[number] - a late fee rate in a percentage
-    lateFeeMaxPct=[number] - a late fee max in a percentage
-    clientsContacts=[string] - a client's email address
-    contractorsContacts=[stirng] - a contractor's email address
-    arbitrationClause=[boolean] - an arbitration clause
+    lateFeeRatePct=[number] - late fee, %% of the contract price
+    lateFeeMaxPct=[number] - late fee, %% of the contract price
+    clientsContacts=[string] - client's (buyer's) email address
+    contractorsContacts=[stirng] - contractor's (seller's) email address
+    arbitrationClause=[boolean] - arbitration clause switch
   ```
 
-## Get all contracts
+## Retrieving all contracts
 
-To get all your contracts you have to make a request with following options:
+To retrieve the list of all your contracts, send a request with the following syntax:
 
 * **URL**
 
@@ -104,9 +104,9 @@ To get all your contracts you have to make a request with following options:
     })
   ```
 
-## Get a contract by a hash
+## Getting contract’s properties by its hash
 
-To get the contract by the hash you have to make a request with following options:
+To get a contract’s properties by its hash, send a request with the following options:
 
 * **URL**
 
@@ -115,6 +115,7 @@ To get the contract by the hash you have to make a request with following option
 * **Headers**
   
   `authorization="Token your_own_token"`
+  where `your_own_token` is your actual token string
   
 * **Method**
 
