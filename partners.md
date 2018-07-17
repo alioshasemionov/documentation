@@ -11,7 +11,20 @@ To create a new contract you have to redirect a user to https://app.confideal.io
 
 * **Not required:**
   ```
-    returnURL - url address where the user will be redirected
+    returnURL=[string] - an url address where the user will be redirected
+    name=[string] - a contract name
+    counterparty=[string] - a counterparty's account address
+    agreement=[string] - an detailed information about the contract
+    pricePerUnit=[number] - a unit price
+    quantity=[number] - units quantity
+    advancePaymentPct=[number] - an advance payment in a percentage
+    closeoutPaymentPct=[number] - a closeout payment in a percentage
+    lateFeeApply=[boolean] - enable late fee
+    lateFeeRatePct=[number] - a late fee rate in a percentage
+    lateFeeMaxPct=[number] - a late fee max in a percentage
+    clientsContacts=[string] - a client's email address
+    contractorsContacts=[stirng] - a contractor's email address
+    arbitrationClause=[boolean] - an arbitration clause
   ```
 
 ## Get all contracts
